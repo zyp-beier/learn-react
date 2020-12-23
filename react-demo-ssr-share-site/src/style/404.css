@@ -1,0 +1,20 @@
+.content {
+    /*margin-top: 10rem;*/
+}
+
+.content .title {
+    /*font-size: 2.5rem;*/
+}
+
+.content .tips {
+    /*font-size: 1.5rem;*/
+}
+
+
+.links-wrap {
+    margin-top: 5rem;
+}
+
+.links-wrap .link {
+    padding: 1rem;
+}

@@ -1,0 +1,51 @@
+.login-wrap{
+    width:400px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    padding:20px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 3px 2px rgba(255,255,255,0.1);
+    color: #e4e4e4;
+}
+
+.login-title{
+    text-align: center;
+    margin-bottom:20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "微软雅黑 Light";
+}
+
+.login-form{
+    text-align: center;
+}
+
+.form-item{
+    margin-bottom:10px;
+}
+
+.login-form label{
+    width: 80px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+}
+
+.login-form input{
+    margin-left:5px;
+    outline-style: none;
+    padding:8px 5px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login{
+    width:20%;
+    margin: 30px auto 0 auto;
+    font-size: 16px;
+    padding:6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}

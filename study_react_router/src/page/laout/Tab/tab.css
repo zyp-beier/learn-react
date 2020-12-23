@@ -1,0 +1,15 @@
+.TabWrap {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  height:50px;
+  width: 100%;
+  display: flex;
+  box-shadow: 1px 2px 3px 2px #ccc;
+}
+
+.tab-title{
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+}

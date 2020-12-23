@@ -1,0 +1,21 @@
+.nine-ul{
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+    border:1px solid #20a0ff;
+    border-radius: 10px;
+    padding:5px 20px;
+    /*background-color: #20a0ff;*/
+}
+.nine-li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    border-right:1px solid #20a0ff;
+}
+.nine-li:last-child{
+    border-right: none;
+}
+.active{
+    background-color: #20a0ff;
+}

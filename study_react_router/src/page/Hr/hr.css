@@ -1,0 +1,14 @@
+.hr-wrap{
+  margin: 20px 0;
+}
+.line{
+    height: 1px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+.line span{
+  position: relative;
+  top: -10px;
+  background: #F5F5F9;
+  padding: 0 10px;
+}
