@@ -26,7 +26,6 @@ class Components extends React.Component{
 render(){
         return(
             <div>
-                <div>组件</div>
                 <input type="text" value={this.state.name} onChange={this.handleChange}/>
                 <Children name={this.state.name}>
                     <h1>这是什么啊</h1>

@@ -19,11 +19,7 @@ export default class Product extends React.Component {
             <div>
                 <div>
                     <ul>
-                        <li>产品</li>
-                        <li>产品</li>
-                        <li>产品</li>
-                        <li>产品</li>
-                        <li>产品</li>
+
                         <li>{this.state.id}</li>
                         {this.state.name}
                         {this.props.match.params.id}

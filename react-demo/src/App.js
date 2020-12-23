@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import InputThree from "./NewInput";
-import Thermometer from "./Thermometer";
 import Components from "./demo/Components";
 import Parent from "./parent/Parent";
 import {BrowserRouter,Switch,Route,Redirect} from "react-router-dom";
@@ -13,13 +11,8 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="App">
-        {/*<Demo/>*/}
-        {/*<Input/>*/}
-        {/*<Container />*/}
-        {/*<InputThree />*/}
-        {/*<Thermometer/>*/}
-        {/*<Components />*/}
-        {/*<Parent />*/}
+        <Components />
+        <Parent />
         <BrowserRouter>
             <Header />
             <Switch>

@@ -1,8 +1,6 @@
 import  React from "react";
 import {Link, NavLink} from "react-router-dom";
-import InputThree from "../NewInput";
 import {Route, Router} from "react-router";
-import Thermometer from "../Thermometer";
 
 export default  class Son extends React.Component{
     constructor(props) {
@@ -13,7 +11,6 @@ export default  class Son extends React.Component{
         };
     }
     handleChange(e) {
-        console.log(e.target.value)
         this.props.handleChange(e.target.value)
     };
      assignmentOne(e) {
@@ -22,9 +19,6 @@ export default  class Son extends React.Component{
         })
     };
     assignmentTwo(e){
-        // this.setState({
-        //     psd: e.target.value
-        // })
         this.props.assignmentTwo(e.target.value)
     }
     handleClick() {
@@ -51,7 +45,8 @@ export default  class Son extends React.Component{
                         return <li>child</li>
                     })
                     }
-                </div>                <div>
+                </div>               
+                <div>
                     <div>
                         <input type="text" ref="dome"/>
                     </div>

@@ -10,13 +10,7 @@ export default class Index extends React.Component {
         return(
             <div>
                 <div>
-                    <ul>
-                       <li>首页</li>
-                       <li>首页</li>
-                       <li>首页</li>
-                       <li>首页</li>
-                       <li>首页</li>
-                    </ul>
+                    首页
                 </div>
             </div>
         )

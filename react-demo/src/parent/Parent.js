@@ -1,20 +1,7 @@
-import * as React from "react";
-import Son from "./Son";
+import React from "react";
 import {Link,Route, BrowserRouter as Router,Switch} from "react-router-dom";
-import Input from "../input";
-import Thermometer from "../Thermometer";
-import NewInput from "../NewInput";
-import Demo from "../demo";
-
-
-
+import Son from "./Son";
 export default class Parent extends React.Component{
-    constructor() {
-        super()
-        this.state={
-            value:'hahahhahhahhahahhaha'
-        }
-    }
     handleChange(value) {
         this.setState({
             value
@@ -26,10 +13,8 @@ export default class Parent extends React.Component{
     render() {
         return(
             <div>
-                {this.state.value}
-                <div>
-                    <h1>一级导航</h1>
-                    <Router>
+                <h1>一级导航</h1>
+                <Router>
                     <div>
                         <ul>
                             <li><Link to='/lb'>李白</Link></li>
@@ -37,16 +22,15 @@ export default class Parent extends React.Component{
                             <li><Link to='/lsy'>李商尹</Link></li>
                         </ul>
                     </div>
-                        <Switch>
-                            <Route path='/lb' component={Input} />
-                            <Route path='/df' component={NewInput} />
-                            <Route path='/lsy' component={Demo} />
-                        </Switch>
-                    </Router>
-                    <Son handleChange={this.handleChange.bind(this)} assignmentTwo={this.assignmentTwo(this)}>
-                        <span>数组</span>
-                    </Son>
-                </div>
+                    <Switch>
+                        <Route path='/lb' children={() => <div>李白</div>} />
+                        <Route path='/df' children={() => <div>杜甫</div>} />
+                        <Route path='/lsy' children={() => <div>李商隐</div>} />
+                    </Switch>
+                </Router>
+                <Son handleChange={this.handleChange.bind(this)} assignmentTwo={this.assignmentTwo(this)}>
+                    <span>数组</span>
+                </Son> 
             </div>
         )
     }
