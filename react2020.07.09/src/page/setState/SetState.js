@@ -7,8 +7,6 @@ class SetState extends React.Component{
             isLinked: true,
             count: 0
         }
-        this.change = this.change.bind(this)
-        this.changeCount = this.changeCount.bind(this)
     }
     componentDidMount() {
         this.setState(function (state) {
@@ -35,14 +33,14 @@ class SetState extends React.Component{
         console.log('setState后立即显示state的值为' + this.state.count)
     }
 
-    change(){
+    change = () => {
         console.log(this.state.isLinked)
         this.setState({
             isLinked: !this.state.isLinked
         })
         console.log(this.state.isLinked)
     }
-    changeCount() {
+    changeCount = () => {
         console.log(this.state.count)
     }
     render() {
