@@ -18,8 +18,7 @@ export default class TemperatureInput extends React.Component{
         this.props.onTemperatureChange(e.target.value);
     }
     render() {
-        const temperature = this.props.temperature;
-        const scale = this.props.scale;
+        const {temperature, scale} = this.props;
         return(
             <fieldset>
                 <legend>温度是 {scaleNames[scale]}:</legend>

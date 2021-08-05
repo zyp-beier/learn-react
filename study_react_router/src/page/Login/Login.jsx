@@ -37,18 +37,18 @@ export default function Login (props) {
     this.inputRef.focus();
   };
   function handleLogin() {
-    // history.push('/index')
-    setUserInfo(form)
-    setTimeout(() => {  
-      console.log(userInfo);
-    }, 2000);
-
-    if(login) {
-      //登录
-
-    }else{
-      //注册
-    }
+    history.push('/index')
+    // setUserInfo(form)
+    // setTimeout(() => {
+    //   console.log(userInfo);
+    // }, 2000);
+    //
+    // if(login) {
+    //   //登录
+    //
+    // }else{
+    //   //注册
+    // }
   }
   function handleUserName(val) {
     setForm({
@@ -85,7 +85,7 @@ export default function Login (props) {
             {
               login? '':<InputItem type="phone" value={form.phone} placeholder="185 7423 1029" onChange={handleUserPhone}>手机号</InputItem>
             }
-            
+
             <InputItem
               value={form.password}
               type="password"
